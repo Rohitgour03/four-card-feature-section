@@ -40,8 +40,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Here is my solution](https://your-solution-url.com)
-- Live Site URL: [here is my live solution](https://your-live-site-url.com)
+- Solution URL: [Here is my solution](https://github.com/Rohitgour03/four-card-feature-section/)
+- Live Site URL: [here is my live solution]( https://rohitgour03.github.io/four-card-feature-section/)
 
 ## My process
 
