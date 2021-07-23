@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+} 
+
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    color: hsl(229, 6%, 66%);  
+}
+
+h1,h2{
+    color: hsl(234, 12%, 34%);
+    margin: 0;
+    line-height: 1.2;
+}
+
+h1{
+    font-size: 1.5rem;
+}
+
+
+.main_container{
+    margin: 5rem 0rem;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+body{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.title_section{
+    text-align: center;
+    width: 85%;
+}
+.title_01{
+    font-weight: 200;
+    color: hsl(230, 12%, 20%);
+    margin-bottom: 0.5rem;
+}
+.title_description{
+   margin: 1rem auto;
+   width: 90%;
+}
+
+
+.cards_section{
+    font-size: 0.85rem;
+    margin: 5em auto;
+}
+.card_content{
+    width: 80%;
+    margin: 0 auto;
+}
+.card{
+    margin: 2em auto;
+    border-radius: 5px;
+    box-shadow:  0px 10px 20px 0px hsl(237, 49%, 91%);
+    padding: 2.5em 0em;
+}
+.card_image_container{
+    margin-top: 2em;
+    display: grid;
+    justify-content: flex-end;
+}
+
+.card_01{
+    border-top: 5px solid hsl(180, 62%, 55%);
+}
+.card_02{
+    border-top: 5px solid hsl(0, 78%, 62%);
+}
+.card_03{
+    border-top: 5px solid hsl(34, 97%, 64%);
+}
+.card_04{
+    border-top: 5px solid hsl(212, 86%, 64%);
+}
+
+
+@media screen and (min-width: 765px){
+    
+
+    body{
+        min-height: 100vh;
+    }
+
+    .main_container{
+        margin-top: 5rem;
+    }
+
+    .cards_section{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 2em;
+        grid-template-areas: 
+        " first-col second-col_first-row third-col"
+        " first-col second-col_second-row third-col"
+        ;
+    }
+    .card{
+        margin: 0;
+    }
+    .card_01{
+        grid-area: first-col;
+        align-self: center;
+    }
+    .card_02{
+        grid-area: second-col_first-row;
+    }
+    .card_03{
+        grid-area: second-col_second-row;
+    }
+    .card_04{
+        grid-area: third-col;
+        align-self: center;
+    }
+
+    .title_description{
+        margin: 1rem auto;
+        width: 40%;
+     }
+
+}
